@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PreLoader</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="wrap">
+	
+    <div id="local">
+        <img src="img/1.jpg" width="1920px" height="1080px" alt="Imagem 1" title=" Imagem 1" />
+        <img src="img/2.jpg" width="1920px" height="1080px" alt="Imagem 2" title=" Imagem 2" />
+        <img src="img/3.jpg" width="1920px" height="1080px" alt="Imagem 3" title=" Imagem 3" />
+        <div id="img4" class="imagem" title="Imagem 4"></div>
+        <img src="img/5.jpg" width="1920px" height="1080px" alt="Imagem 5" title=" Imagem 5" />
+        <img src="img/6.jpg" width="1920px" height="1080px" alt="Imagem 6" title=" Imagem 6" />
+        <img src="img/7.jpg" width="1920px" height="1080px" alt="Imagem 7" title=" Imagem 7" />
+        <div id="img8" class="imagem" title="Imagem 8"></div>
+        <img src="img/9.jpg" width="1920px" height="1080px" alt="Imagem 9" title=" Imagem 9" />
+        <img src="img/10.jpg" width="1920px" height="1080px" alt="Imagem 10" title=" Imagem 10" />
+    </div>   
+    
+    <div id="externo">
+        <img src="http://fotos.sapo.pt/hp4ever/pic/001b0a9c" alt="Imagem 1" title=" Imagem 1" />
+        <img src="http://www.trekbrasilis.org/tbweblog/wp-content/uploads/2008/12/enterprise.jpg" alt="Imagem 2" title=" Imagem 2" />
+        <img src="http://www.111diaspelaal.com/wp-content/uploads/2010/06/panorama_aqua_alta2.jpg" alt="Imagem 3" title=" Imagem 3" />
+        <div id="img4" class="imagem" title="Imagem 4"></div>
+        <img src="http://lionsgatepublicity.com/epk/catchingfire/images/ka_300dpi.jpg" alt="Imagem 5" title=" Imagem 5" />
+        <img src="http://www.fiocruz.br/ioc/media/Nikon%20alta-01.jpg" alt="Imagem 6" title=" Imagem 6" />
+        <img src="http://carrosantigos.files.wordpress.com/2008/12/blog_antigos_papel_parede.jpg" alt="Imagem 7" title=" Imagem 7" />
+        <div id="img8" class="imagem" title="Imagem 8"></div>
+        <img src="http://imgsrc.hubblesite.org/hu/db/2005/37/images/a/formats/print.jpg" alt="Imagem 9" title=" Imagem 9" />
+        <img src="http://adrenaline.uol.com.br/files/upload/noticias/2011/08/djlosada/90964_1341shot00730.jpg" alt="Imagem 10" title=" Imagem 10" /> 
+    </div>
+
+</div><!-- wrap-->
+
+<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="js/lsPreloader.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    
+$(function(){
+    
+    $("#wrap").lsPreloader({
+        
+        backgroundColor:    "#faae25",
+        minimumTime:        .5,
+        progressHeight:     "5px",
+        progressPosition:   "center",
+        progressColor:      "#f9f9f9",
+        percentFontFamily:  "Verdana, Geneva, sans-serif",
+        percentFontSize:    "20px",
+        onStart:            function(){ console.log( "Iniciou preloader" ) },
+        onComplete:         function(){ console.log( "Finalizou preloader" ) }
+        
+    });
+            
+});
+    
+    
+</script>
+
+</body>
+</html>
